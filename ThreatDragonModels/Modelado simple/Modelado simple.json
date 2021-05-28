@@ -9,7 +9,243 @@
       {
         "title": "Módulo 2 Unidad 5",
         "thumbnail": "./public/content/images/thumbnail.jpg",
-        "id": 0
+        "id": 0,
+        "diagramJson": {
+          "cells": [
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 673,
+                "y": 135
+              },
+              "angle": 0,
+              "id": "aedfc9a4-827f-4bc8-9115-8c73d0b39f47",
+              "z": 2,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "INTERNET"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 36,
+                "y": 354
+              },
+              "angle": 0,
+              "id": "dd354740-7ec4-4fd3-ad51-efc3c49f64a2",
+              "z": 3,
+              "hasOpenThreats": false,
+              "threats": [],
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Mi PC"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 983,
+                "y": 12
+              },
+              "angle": 0,
+              "id": "50ced601-2c79-4d30-b036-c0b7f4f4251c",
+              "z": 4,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Servidor WWW"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 133,
+                "y": 49
+              },
+              "target": {
+                "x": 456,
+                "y": 571
+              },
+              "vertices": [
+                {
+                  "x": 517,
+                  "y": 203
+                }
+              ],
+              "id": "7d37bd26-5aee-4bee-8e32-5929339bcb0d",
+              "z": 7,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "aedfc9a4-827f-4bc8-9115-8c73d0b39f47"
+              },
+              "target": {
+                "id": "50ced601-2c79-4d30-b036-c0b7f4f4251c"
+              },
+              "vertices": [],
+              "id": "92706a14-f3ac-484e-b850-2d7bbbac91e8",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Credenciales",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 8,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 344,
+                "y": 239
+              },
+              "angle": 0,
+              "id": "f34c0fd3-ca91-4ddf-8fda-99e8d5b4826b",
+              "z": 9,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Router/Firewall"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "dd354740-7ec4-4fd3-ad51-efc3c49f64a2"
+              },
+              "target": {
+                "id": "f34c0fd3-ca91-4ddf-8fda-99e8d5b4826b"
+              },
+              "vertices": [],
+              "id": "fa174fd0-9a34-4d8f-b529-415446b0504c",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Credenciales",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 10,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "f34c0fd3-ca91-4ddf-8fda-99e8d5b4826b"
+              },
+              "target": {
+                "id": "aedfc9a4-827f-4bc8-9115-8c73d0b39f47"
+              },
+              "vertices": [],
+              "id": "0c18d9fc-c377-4173-a4ca-470ae9d50d43",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "Credenciales",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 11,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            }
+          ]
+        },
+        "size": {
+          "height": 637.9686889648438,
+          "width": 1143
+        }
       }
     ],
     "reviewer": "Modelado simple"
